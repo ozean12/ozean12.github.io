@@ -39,43 +39,35 @@
         <input type="number" id="inputAmount" placeholder="Amount" min="200" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" required/>
         <div class="help-block with-errors"></div>
 
-        <div class="container">
-          <div class="row">
-              <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" placeholder="Billing date" required/>
-                    <div class="help-block with-errors"></div>
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-            <script type="text/javascript">
-              $(function () {
-                $('#datetimepicker1').datetimepicker();
-              });
-            </script>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker1'>
+              <input type='text' class="form-control" placeholder="Billing date" required/>
+              <div class="help-block with-errors"></div>
+              <span class="input-group-addon">
+                 <span class="glyphicon glyphicon-calendar"></span>
+              </span>
           </div>
         </div>
+        <script type="text/javascript">
+          $(function () {
+            $('#datetimepicker1').datetimepicker();
+          });
+        </script>
 
-        <div class="container">
-          <div class="row">
-              <div class="form-group">
-                <div class='input-group date' id='datetimepicker2'>
-                    <input type='text' class="form-control" placeholder="Due date" required/>
-                    <div class="help-block with-errors"></div>
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-            <script type="text/javascript">
-              $(function () {
-                $('#datetimepicker2').datetimepicker();
-              });
-            </script>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker2'>
+              <input type='text' class="form-control" placeholder="Due date" required/>
+              <div class="help-block with-errors"></div>
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
           </div>
         </div>
+        <script type="text/javascript">
+          $(function () {
+            $('#datetimepicker2').datetimepicker();
+          });
+        </script>
 
         <label for="inputIBAN" class="sr-only">IBAN</label>
         <input type="text" id="inputIBAN" class="form-control" placeholder="IBAN" required pattern="^DE([0-9a-zA-Z\s]\s?){20}$" />
